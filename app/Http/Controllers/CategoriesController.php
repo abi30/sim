@@ -79,6 +79,10 @@ class CategoriesController extends Controller
     public function edit($id)
     {
         //
+        $category = Category::findOrFail($id);
+        // if don't get in the database then 404 error 
+        return view('categories.edit',compact('category'));
+
     }
 
     /**
@@ -91,6 +95,17 @@ class CategoriesController extends Controller
     public function update(Request $request, $id)
     {
         //
+         $this->validate($request,[
+            'name'=>'required|min:3|max:50|unique:categories,name,'.$id
+        ]);
+
+        $category = new Category();
+        $category = Category::findOrFail($id);
+        $category->name = $request->name;
+        $category->save();
+
+        flash(message:'Category updated successfully')->success();
+        return redirect()->route('categories.index');
     }
 
     /**

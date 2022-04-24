@@ -48,7 +48,9 @@
                                             <tr>
                                                 <td>{{ ++$key }}</td>
                                                 <td>{{ $category->name ?? '' }}</td>
-                                                <td>Action</td>
+                                                <td>Action
+                                                    
+                                                </td>
                                             </tr>
                                         @endforeach
                                     @endif
