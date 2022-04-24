@@ -26,11 +26,11 @@ class Handler extends ExceptionHandler
     ];
 
     /**
-     * A list of the inputs that are never flashed for validation exceptions.
+     * A list of the inputs that are never ed for validation exceptions.
      *
      * @var array<int, string>
      */
-    protected $dontFlash = [
+    protected $dont = [
         'current_password',
         'password',
         'password_confirmation',
