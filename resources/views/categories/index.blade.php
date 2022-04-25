@@ -31,9 +31,12 @@
                         <div class="card-body">
                             <div class="card-header">
                                 <h5 class="card-title">Categories List</h5><br />
+                                <a class="btn btn-sm btn-outline-primary" href="{{ route('categories.create') }}">
+                                    <i class="fa fa-plus"></i> Create Category</a><br /><br />
+
                             </div>
                             {{-- <table class="table table-bordered datatable1"> --}}
-                              <table id="example1" class="table table-bordered table-striped datatable1">
+                              <table id="example1" class="table table-bordered table-striped datatable1 ">
 
                                 <thead>
                                     <tr>
@@ -48,8 +51,16 @@
                                             <tr>
                                                 <td>{{ ++$key }}</td>
                                                 <td>{{ $category->name ?? '' }}</td>
-                                                <td>Action
-                                                    
+                                                <td>
+                                                    <a href="{{ route('categories.edit',$category->id) }}" class="btn btn-sm btn-info">
+                                                        <i class="fa fa-edit"></i> Edit</a>
+                                                    <a href="javascript:;" class="btn btn-sm btn-danger sa-delete" data-form-id = "category-delete{{ $category->id }}">
+                                                        <i class="fa fa-trash"></i> Delete</a>
+                                                        <form id="category-delete{{ $category->id }}" action="{{ route('categories.destroy',$category->id) }}" method="POST" >
+                                                        
+                                                            @csrf
+                                                            @method('DELETE')
+                                                        </form>
                                                 </td>
                                             </tr>
                                         @endforeach

@@ -4,9 +4,8 @@ namespace App\Http\Controllers;
 
 use App\Models\Category;
 use Illuminate\Http\Request;
+
 // use Laracasts\Flash;
-
-
 
 class CategoriesController extends Controller
 {
@@ -17,8 +16,8 @@ class CategoriesController extends Controller
      */
     public function index()
     {
-        $categories = Category::orderby('created_at','DESC')->get();
-        return view('categories.index',compact('categories'));
+        $categories = Category::orderby( 'created_at', 'DESC' )->get();
+        return view( 'categories.index', compact( 'categories' ) );
     }
 
     /**
@@ -29,7 +28,7 @@ class CategoriesController extends Controller
     public function create()
     {
         //
-        return view('categories.create');
+        return view( 'categories.create' );
     }
 
     /**
@@ -38,24 +37,22 @@ class CategoriesController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
+    public function store( Request $request )
     {
         //
 
         // return $request->all();
         // validate
 
-        $this->validate($request,[
-            'name'=>'required|min:3|max:50|unique:categories'
-        ]);
+        $this->validate( $request, [
+            'name' => 'required|min:3|max:50|unique:categories',
+        ] );
         $category = new Category();
         $category->name = $request->name;
         $category->save();
 
-        flash(message:'Category created successfully')->success();
+        flash( message:'Category created successfully' )->success();
         return back();
-
-
 
     }
 
@@ -65,7 +62,7 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function show($id)
+    public function show( $id )
     {
         //
     }
@@ -76,12 +73,12 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function edit($id)
+    public function edit( $id )
     {
         //
-        $category = Category::findOrFail($id);
-        // if don't get in the database then 404 error 
-        return view('categories.edit',compact('category'));
+        $category = Category::findOrFail( $id );
+        // if don't get in the database then 404 error
+        return view( 'categories.edit', compact( 'category' ) );
 
     }
 
@@ -92,20 +89,20 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, $id)
+    public function update( Request $request, $id )
     {
         //
-         $this->validate($request,[
-            'name'=>'required|min:3|max:50|unique:categories,name,'.$id
-        ]);
+        $this->validate( $request, [
+            'name' => 'required|min:3|max:50|unique:categories,name,' . $id,
+        ] );
 
-        $category = new Category();
-        $category = Category::findOrFail($id);
+        // $category = new Category();
+        $category = Category::findOrFail( $id );
         $category->name = $request->name;
         $category->save();
 
-        flash(message:'Category updated successfully')->success();
-        return redirect()->route('categories.index');
+        flash( message:'Category updated successfully' )->success();
+        return redirect()->route( 'categories.index' );
     }
 
     /**
@@ -114,8 +111,16 @@ class CategoriesController extends Controller
      * @param  int  $id
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy( $id )
     {
         //
+        $category = Category::findOrFail( $id );
+        $category->delete();
+
+// if don't get in the database then 404 error
+        flash( message:'Category deleted successfully' )->success();
+        return redirect()->route( 'categories.index' );
+
+
     }
 }

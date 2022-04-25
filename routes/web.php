@@ -30,14 +30,17 @@ Route::middleware([
 
 // category
 
-Route::get('/template',function(){
-    return view('layouts.master');
-});
-Route::post('categories.store', function () {
-  return view('layouts.master');    
-});
-Route::post('categories.update/{$id}', function () {
-  return view('layouts.master');    
-});
+// Route::get('/template',function(){
+//     return view('layouts.master');
+// });
+// Route::post('categories.store', function () {
+//   return view('layouts.master');    
+// });
+// Route::put('categories.update/{$id}', function () {
+//   return view('layouts.master');    
+// });
+// Route::delete('categories.destroy/{$id}', function () {
+//   return view('layouts.master');    
+// });
 Route::resource('categories',CategoriesController::class);
 // Route::auto('categories',CategoriesController::class);
