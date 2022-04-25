@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\BrandsController;
 use App\Http\Controllers\CategoriesController;
 use Illuminate\Support\Facades\Route;
 
@@ -28,6 +29,14 @@ Route::middleware([
     })->name('dashboard');
 });
 
+Route::middleware(['auth:sanctum'])->group(function(){
+
+    //category
+    Route::resource('categories',CategoriesController::class);
+    //brands
+    Route::resource('brands',BrandsController::class);
+    // Route::resource()
+});
 // category
 
 // Route::get('/template',function(){
@@ -42,5 +51,4 @@ Route::middleware([
 // Route::delete('categories.destroy/{$id}', function () {
 //   return view('layouts.master');    
 // });
-Route::resource('categories',CategoriesController::class);
 // Route::auto('categories',CategoriesController::class);
