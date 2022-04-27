@@ -1,4 +1,4 @@
-require("./bootstrap");
+grequire("./bootstrap");
 
 // import Vue from "vue";
 // import Alpine from "alpinejs";
