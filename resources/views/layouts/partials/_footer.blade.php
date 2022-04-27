@@ -6,5 +6,5 @@
     <!-- Default to the left -->
     <strong>Copyright &copy; @php
           echo date('Y');
-    @endphp <a href="http://alrakib.codefactory.live/">abrakib.codefactory.live</a>.</strong> All rights reserved.
+    @endphp <a href="http://alrakib.codefactory.live/">www.alrakib.codefactroy.live</a>.</strong> All rights reserved.
   </footer>
