@@ -1,15 +1,14 @@
 require("./bootstrap");
 
 // import Vue from "vue";
-import Alpine from "alpinejs";
+// import Alpine from "alpinejs";
 
-window.Alpine = Alpine;
+// window.Alpine = Alpine;
 
-Alpine.start();
+// Alpine.start();
 window.Vue = require("vue");
 Vue.component(
     "example-component",
-    require("./components/ExampleComponents.vue").default
-);
+    require("./components/ExampleComponents").default);
 
 const app = new Vue({ el: "#app" });

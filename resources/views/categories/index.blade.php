@@ -33,9 +33,10 @@
                                 <h5 class="card-title">Categories List</h5><br />
                                 <a class="btn btn-sm btn-outline-primary" href="{{ route('categories.create') }}">
                                     <i class="fa fa-plus"></i> Create Category</a><br /><br />
-
-                            </div>
-                            {{-- <table class="table table-bordered datatable1"> --}}
+                                    
+                                </div>
+                                {{-- <table class="table table-bordered datatable1"> --}}
+                                <example-component></example-component>
                               <table id="example1" class="table table-bordered table-striped datatable1 ">
 
                                 <thead>
