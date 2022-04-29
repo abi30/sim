@@ -34,6 +34,7 @@
                                 <a class="btn btn-sm btn-outline-primary" href="{{ route('categories.create') }}">
                                     <i class="fa fa-plus"></i> Create Category</a><br /><br />
                                     
+                                    
                                 </div>
                                 {{-- <table class="table table-bordered datatable1"> --}}
                                 <example-component></example-component>
