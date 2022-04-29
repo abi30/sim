@@ -26,18 +26,16 @@
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12 col-6">
-
+                    
                     <div class="card card-primary card-outline">
                         <div class="card-body">
                             <div class="card-header">
                                 <h5 class="card-title">Categories List</h5><br />
                                 <a class="btn btn-sm btn-outline-primary" href="{{ route('categories.create') }}">
                                     <i class="fa fa-plus"></i> Create Category</a><br /><br />
-                                    
-                                    
+                                    <example-component></example-component>
                                 </div>
                                 {{-- <table class="table table-bordered datatable1"> --}}
-                                <example-component></example-component>
                               <table id="example1" class="table table-bordered table-striped datatable1 ">
 
                                 <thead>
@@ -70,12 +68,13 @@
                                 </tbody>
                             </table>
 
+                            
                         </div>
                     </div>
                     <!-- /.card -->
                 </div>
                 <!-- /.col-md-6 -->
-
+        
             </div>
             <!-- /.row -->
         </div>

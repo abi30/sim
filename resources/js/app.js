@@ -4,10 +4,11 @@ require("./bootstrap");
 // Alpine.start();
 // window = require("vue");
 
-const app = createApp({ el: "#app" });
+const app = createApp({});
 
 app.component(
     "example-component",
-    require("./components/ExampleComponents").default);
+    require("./components/ExampleComponents").default
+);
 
-// app.mount('#app');
+app.mount("#app");

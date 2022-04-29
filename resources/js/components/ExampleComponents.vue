@@ -1,5 +1,18 @@
 <template>
-    <div>test</div>
+    <div>{{ name }}</div>
+    
 </template>
 
-export default {};
+
+export default {
+    
+data() {
+      return {name: "baba o ma" };
+     },
+
+}
+
+
+
+
+
