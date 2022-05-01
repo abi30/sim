@@ -1,5 +1,13 @@
 <template>
-  <div>{{ name }}</div>
+    <div>{{ name }}</div>
 </template>
 
-export default { data() { return { name: "rakib" }; }, }
+<script>
+export default {
+    data() {
+        return {
+            name: "bdullla Rakib",
+        };
+    },
+};
+</script>
