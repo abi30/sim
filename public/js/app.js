@@ -19464,7 +19464,7 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = ({
   data: function data() {
     return {
-      name: "baba o ma"
+      name: "rakib"
     };
   }
 });
@@ -36998,13 +36998,13 @@ __webpack_require__.r(__webpack_exports__);
 /* harmony export */ });
 /* harmony import */ var _ExampleComponents_vue_vue_type_template_id_0dd1f145__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./ExampleComponents.vue?vue&type=template&id=0dd1f145 */ "./resources/js/components/ExampleComponents.vue?vue&type=template&id=0dd1f145");
 /* harmony import */ var _ExampleComponents_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./ExampleComponents.vue?vue&type=script&lang=js */ "./resources/js/components/ExampleComponents.vue?vue&type=script&lang=js");
-/* harmony import */ var C_xampp_htdocs_mainwork_laravel_sim_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
+/* harmony import */ var C_xampp_htdocs_mywork_laravel_sim_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__(/*! ./node_modules/vue-loader/dist/exportHelper.js */ "./node_modules/vue-loader/dist/exportHelper.js");
 
 
 
 
 ;
-const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_mainwork_laravel_sim_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ExampleComponents_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ExampleComponents_vue_vue_type_template_id_0dd1f145__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ExampleComponents.vue"]])
+const __exports__ = /*#__PURE__*/(0,C_xampp_htdocs_mywork_laravel_sim_node_modules_vue_loader_dist_exportHelper_js__WEBPACK_IMPORTED_MODULE_2__["default"])(_ExampleComponents_vue_vue_type_script_lang_js__WEBPACK_IMPORTED_MODULE_1__["default"], [['render',_ExampleComponents_vue_vue_type_template_id_0dd1f145__WEBPACK_IMPORTED_MODULE_0__.render],['__file',"resources/js/components/ExampleComponents.vue"]])
 /* hot reload */
 if (false) {}
 
