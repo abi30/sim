@@ -2,10 +2,4 @@
   <div>{{ name }}</div>
 </template>
 
-<script>
-export default {
-  data() {
-    return { name: "rakib" };
-  },
-};
-</script>
+export default { data() { return { name: "rakib" }; }, }
