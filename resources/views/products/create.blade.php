@@ -27,7 +27,7 @@
             <div class="row">
                 <div class="col-lg-6 col-12">
 
-                    
+                    <product-add></product-add>
                     <!-- /.card -->
                 </div>
                 <!-- /.col-md-6 -->

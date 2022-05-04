@@ -23,6 +23,7 @@
     },
     "dependencies": {
         "vue": "^3.2.33",
-        "vue-template-compiler": "^2.6.14"
+        "vue-template-compiler": "^2.6.14",
+        "vuex": "^4.0.2"
     }
 }

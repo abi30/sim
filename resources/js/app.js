@@ -10,5 +10,11 @@ app.component(
     "example-component",
     require("./components/ExampleComponents").default
 );
+app.component(
+    "product-add",
+    require("./components/products/ProductAdd").default
+);
 
-app.mount("#app");
+import store from "./store";
+
+app.mount("#app", store);
