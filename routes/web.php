@@ -6,6 +6,7 @@ use App\Http\Controllers\SizesController;
 use App\Http\Controllers\ProductsController;
 use Illuminate\Support\Facades\Route;
 
+
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -35,6 +36,7 @@ Route::middleware(['auth:sanctum'])->group(function(){
 
     //Product categories
     Route::resource('categories',CategoriesController::class);
+    Route::get('/api/categories',[CategoriesController::class, 'getCategoriesJson']);
     //Product brands
     Route::resource('brands',BrandsController::class);
     //product sizes
