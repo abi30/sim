@@ -1,5 +1,4 @@
 const mix = require("laravel-mix");
-
 /*
  |--------------------------------------------------------------------------
  | Mix Asset Management
@@ -36,3 +35,8 @@ if (mix.inProduction()) {
 // if (mix.inProduction()) {
 //     mix.version();
 // }
+
+
+// mix.js("resources/js/app.js", "public/js")
+//     .vue()
+//     .sass("resources/sass/app.scss", "public/css");

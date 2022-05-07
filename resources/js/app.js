@@ -1,14 +1,23 @@
-grequire("./bootstrap");
+// require("./bootstrap");
 
-// import Vue from "vue";
-// import Alpine from "alpinejs";
+// window.Vue = require('vue').default;
 
-// window.Alpine = Alpine;
+// Vue.component('Example-component', require('./components/ExampleComponents').default);
 
-// Alpine.start();
-window.Vue = require("vue");
-Vue.component(
-    "example-component",
-    require("./components/ExampleComponents").default);
 
-const app = new Vue({ el: "#app" });
+// const app = new Vue({
+//     el: "#app"
+// });
+import { createApp } from "vue";
+require("./bootstrap");
+
+let app = createApp({
+    el: "#app"
+});
+
+app.component(
+    "Example-component",
+    require("./components/ExampleComponents").default
+);
+
+// app.mount("#app");
