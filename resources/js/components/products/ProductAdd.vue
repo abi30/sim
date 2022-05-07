@@ -3,20 +3,12 @@
         <div class="card-body">
             <h5 class="card-title">Create Category</h5>
             <br />
-            <form
-                role="form"
-                action="{{ route('categories.store') }}"
-                method="post"
-            >
+            <form role="form" action="" method="post">
                 <div class="card-body">
                     <div class="form-group">
                         <label>Name</label>
                         <input
-                            type="text"
-                            class="form-control"
-                            placeholder="Enter category name"
-                            name="name"
-                        />
+                            type="text" class="form-control" placeholder="Enter category name" name="name"/>
                     </div>
                 </div>
                 <!-- /.card-body -->
