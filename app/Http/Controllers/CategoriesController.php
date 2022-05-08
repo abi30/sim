@@ -128,8 +128,8 @@ class CategoriesController extends Controller
         $categories = Category::all();
 
       return  response()->json([
-            "success"=>true,
-            "data" =>$categories
+            "success" =>  true,
+            "data"    =>  $categories
             ],Response::HTTP_OK); 
     }
 }

@@ -23,5 +23,14 @@
     </div>
 </template>
 <script>
-export default {};
+import store from '../../store';
+import * as actions from '../../store/action-types';
+export default {
+
+mounted(){
+    // Get Categories
+    store.dispatch(actions.GET_CATEGORIES);
+}
+
+};
 </script>

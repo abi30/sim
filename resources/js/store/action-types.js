@@ -1,2 +1,2 @@
 // categories
-const GET_CATEGORIES = "GET_CATEGORIE";
+export const GET_CATEGORIES = "GET_CATEGORIES";
